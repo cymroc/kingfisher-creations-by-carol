@@ -709,10 +709,15 @@ button { cursor: pointer; font-family: inherit; }
   gap: 10px;
 }
 .form-check input { width: auto; }
+.form-check input:focus {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
 .form-check label {
   font-family: var(--font-sans);
   font-size: 13px;
   color: var(--muted);
+  cursor: pointer;
 }
 .form-submit {
   align-self: flex-start;
