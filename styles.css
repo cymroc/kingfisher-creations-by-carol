@@ -114,8 +114,11 @@ button { cursor: pointer; font-family: inherit; }
 
 /* ── HERO ── */
 #hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  padding: 24px 48px;
   background: linear-gradient(135deg, var(--dark) 0%, #1B6A8E 55%, var(--blue) 100%);
   position: relative;
   overflow: hidden;
@@ -130,9 +133,8 @@ button { cursor: pointer; font-family: inherit; }
 .hero-left {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 24px;
+  align-items: flex-start;
+  max-width: 440px;
   position: relative;
   z-index: 1;
 }
@@ -228,8 +230,8 @@ button { cursor: pointer; font-family: inherit; }
   grid-template-columns: 1fr 1fr;
   gap: 3px;
   padding: 3px;
-  max-width: 320px;
-  margin: auto;
+  width: 320px;
+  flex-shrink: 0;
 }
 .hero-img-wrap {
   position: relative;
@@ -802,7 +804,7 @@ button { cursor: pointer; font-family: inherit; }
 
 /* Tablet (max-width 900px) */
 @media (max-width: 900px) {
-  #hero { grid-template-columns: 1fr; }
+  #hero { flex-direction: column; padding: 24px; gap: 24px; }
   .hero-grid { grid-template-columns: 1fr 1fr; }
   #about { grid-template-columns: 1fr; }
   .about-image-side { max-height: 400px; overflow: hidden; }
@@ -815,7 +817,7 @@ button { cursor: pointer; font-family: inherit; }
 @media (max-width: 600px) {
   .nav-links { display: none; }
   .nav-hamburger { display: flex; }
-  #hero { padding: 20px 16px 16px; }
+  #hero { flex-direction: column; padding: 20px 16px; gap: 16px; }
   .hero-logo { width: 60px; height: 60px; margin-bottom: 8px; }
   .hero-title { font-size: clamp(20px, 5.5vw, 28px); }
   .hero-grid { grid-template-columns: 1fr 1fr; gap: 8px; max-width: 280px; }
