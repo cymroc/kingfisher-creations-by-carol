@@ -294,7 +294,77 @@
 
   </div>
 </section>
-    <section id="contact"><!-- Task 9 --></section>
+    <section id="contact">
+  <div class="contact-inner">
+
+    <div class="contact-text">
+      <p class="section-eyebrow" style="text-align:left">Get in touch</p>
+      <h2 class="section-title" style="text-align:left"><em>Request something special</em></h2>
+      <div class="section-divider" style="margin-left:0"></div>
+      <p class="contact-intro">
+        Whether you'd like to order something personalised, ask about a product, or find out when
+        Carol will be at the market — just drop her a message and she'll get back to you.
+      </p>
+      <a href="https://www.facebook.com/profile.php?id=100090045278248"
+         target="_blank" rel="noopener" class="facebook-card">
+        <span class="fb-icon">f</span>
+        <div>
+          <strong>Kingfisher Creations by Carol</strong>
+          <span>Follow on Facebook for updates &amp; new products</span>
+        </div>
+      </a>
+    </div>
+
+    <form name="contact" method="POST" data-netlify="true"
+          data-netlify-honeypot="bot-field" class="contact-form">
+      <input type="hidden" name="form-name" value="contact">
+      <p hidden><label>Don't fill this out: <input name="bot-field"></label></p>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" required placeholder="e.g. Jane Smith">
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" required placeholder="jane@example.com">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="interest">What are you interested in?</label>
+        <select id="interest" name="interest">
+          <option value="">— Please choose —</option>
+          <option value="cushions">Cushions</option>
+          <option value="mugs-coasters">Mugs &amp; Coasters</option>
+          <option value="bags">Bags &amp; Totes</option>
+          <option value="baby-gifts">Baby Gifts</option>
+          <option value="glass-blocks">Glass Blocks</option>
+          <option value="keyrings">Keyrings</option>
+          <option value="textiles">Towels &amp; Textiles</option>
+          <option value="seasonal">Seasonal Gifts</option>
+          <option value="crochet-knitting">Crochet &amp; Knitting</option>
+          <option value="chopping-boards">Chopping Boards</option>
+          <option value="other">Something else</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Your message</label>
+        <textarea id="message" name="message" rows="5"
+                  placeholder="Tell Carol what you'd like — include any names, dates or special details for personalisation"></textarea>
+      </div>
+
+      <div class="form-check">
+        <input type="checkbox" id="personalised" name="personalised" value="yes">
+        <label for="personalised">I'd like something personalised</label>
+      </div>
+
+      <button type="submit" class="btn-gold form-submit">Send Message</button>
+    </form>
+
+  </div>
+</section>
   </main>
 
   <footer id="footer"><!-- Task 10 --></footer>
