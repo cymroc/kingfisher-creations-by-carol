@@ -1,1 +1,2 @@
-// Mobile nav and smooth scroll — see Task 12
+// Auto-update copyright year
+document.getElementById('year').textContent = new Date().getFullYear();
