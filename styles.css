@@ -116,6 +116,7 @@ button { cursor: pointer; font-family: inherit; }
 #hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  height: 340px;
   background: linear-gradient(135deg, var(--dark) 0%, #1B6A8E 55%, var(--blue) 100%);
   position: relative;
   overflow: hidden;
@@ -799,7 +800,7 @@ button { cursor: pointer; font-family: inherit; }
 
 /* Tablet (max-width 900px) */
 @media (max-width: 900px) {
-  #hero { grid-template-columns: 1fr; }
+  #hero { grid-template-columns: 1fr; height: auto; }
   .hero-grid { grid-template-columns: 1fr 1fr; }
   #about { grid-template-columns: 1fr; }
   .about-image-side { max-height: 400px; overflow: hidden; }
