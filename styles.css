@@ -422,3 +422,43 @@ button { cursor: pointer; font-family: inherit; }
   font-style: italic;
   margin-bottom: 16px;
 }
+
+/* ── GALLERY STRIP ── */
+.gallery-strip {
+  display: flex;
+  height: 220px;
+  overflow: hidden;
+  background: var(--dark);
+}
+.gallery-cell {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: flex 0.45s ease;
+}
+.gallery-cell:hover { flex: 2.5; }
+.gallery-cell img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: opacity 0.3s, transform 0.45s ease;
+}
+.gallery-cell:hover img {
+  opacity: 1;
+  transform: scale(1.04);
+}
+.gallery-label {
+  position: absolute;
+  bottom: 10px;
+  left: 12px;
+  font-family: var(--font-sans);
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.85);
+  background: rgba(0,0,0,0.4);
+  padding: 3px 9px;
+  border-radius: 2px;
+}
