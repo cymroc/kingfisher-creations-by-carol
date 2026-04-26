@@ -116,7 +116,7 @@ button { cursor: pointer; font-family: inherit; }
 #hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: 600px;
+  min-height: 360px;
   background: linear-gradient(135deg, var(--dark) 0%, #1B6A8E 55%, var(--blue) 100%);
   position: relative;
   overflow: hidden;
@@ -132,9 +132,17 @@ button { cursor: pointer; font-family: inherit; }
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 64px 48px 64px 64px;
+  padding: 32px 32px 32px 48px;
   position: relative;
   z-index: 1;
+}
+.hero-logo {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 2px solid rgba(200,169,110,0.5);
+  margin-bottom: 16px;
+  object-fit: cover;
 }
 .eyebrow {
   font-family: var(--font-sans);
@@ -142,7 +150,7 @@ button { cursor: pointer; font-family: inherit; }
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--gold);
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -156,11 +164,11 @@ button { cursor: pointer; font-family: inherit; }
 }
 .hero-title {
   font-family: var(--font-serif);
-  font-size: 48px;
+  font-size: 34px;
   font-weight: 400;
   color: var(--white);
   line-height: 1.15;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 .hero-title em {
   font-style: italic;
@@ -168,11 +176,11 @@ button { cursor: pointer; font-family: inherit; }
 }
 .hero-sub {
   font-family: var(--font-sans);
-  font-size: 15px;
+  font-size: 13px;
   color: rgba(255,255,255,0.72);
-  line-height: 1.75;
+  line-height: 1.7;
   max-width: 380px;
-  margin-bottom: 36px;
+  margin-bottom: 22px;
   font-weight: 300;
 }
 .hero-actions {
@@ -801,10 +809,11 @@ button { cursor: pointer; font-family: inherit; }
 @media (max-width: 600px) {
   .nav-links { display: none; }
   .nav-hamburger { display: flex; }
-  #hero { padding: 60px 20px 40px; }
-  .hero-title { font-size: clamp(28px, 8vw, 48px); }
+  #hero { padding: 28px 20px 24px; }
+  .hero-logo { width: 52px; height: 52px; margin-bottom: 10px; }
+  .hero-title { font-size: clamp(22px, 6vw, 34px); }
   .hero-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
-  .hero-img-wrap img { height: 130px; }
+  .hero-img-wrap img { height: 110px; }
   .trust-strip { display: grid; grid-template-columns: 1fr 1fr; }
   #about { padding: 60px 20px; }
   .markets-grid { grid-template-columns: 1fr; }
@@ -818,9 +827,9 @@ button { cursor: pointer; font-family: inherit; }
 @media (max-width: 380px) {
   .product-grid { grid-template-columns: 1fr; }
   .hero-grid { grid-template-columns: 1fr 1fr; gap: 6px; }
-  .hero-img-wrap img { height: 110px; }
+  .hero-img-wrap img { height: 90px; }
   .trust-strip { grid-template-columns: 1fr; }
-  .hero-title { font-size: 26px; }
+  .hero-title { font-size: 22px; }
   .gallery-cell:nth-child(n+4) { display: none; }
 }
 
