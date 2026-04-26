@@ -131,7 +131,9 @@ button { cursor: pointer; font-family: inherit; }
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px 24px 20px 48px;
+  align-items: center;
+  text-align: center;
+  padding: 20px 24px;
   position: relative;
   z-index: 1;
 }
