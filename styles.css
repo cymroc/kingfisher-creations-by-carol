@@ -806,7 +806,6 @@ button { cursor: pointer; font-family: inherit; }
   .hero-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
   .hero-img-wrap img { height: 130px; }
   .trust-strip { grid-template-columns: 1fr 1fr; }
-  .gallery-strip { display: none; }
   .about { padding: 60px 20px; }
   .markets-grid { grid-template-columns: 1fr; }
   .contact-inner { padding: 60px 20px; gap: 40px; }
@@ -822,4 +821,5 @@ button { cursor: pointer; font-family: inherit; }
   .hero-img-wrap img { height: 110px; }
   .trust-strip { grid-template-columns: 1fr; }
   .hero-title { font-size: 26px; }
+  .gallery-cell:nth-child(n+4) { display: none; }
 }
