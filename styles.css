@@ -462,3 +462,72 @@ button { cursor: pointer; font-family: inherit; }
   padding: 3px 9px;
   border-radius: 2px;
 }
+
+/* ── ABOUT CAROL ── */
+#about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 440px;
+  background: var(--blue);
+}
+.about-image-side {
+  overflow: hidden;
+  position: relative;
+}
+.about-image-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+.about-image-side::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, transparent 55%, var(--blue) 100%);
+}
+.about-text-side {
+  padding: 64px 64px 64px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.eyebrow-light { color: var(--gold); }
+.about-title {
+  font-family: var(--font-serif);
+  font-size: 36px;
+  font-weight: 400;
+  color: var(--white);
+  margin: 10px 0 20px;
+  line-height: 1.2;
+}
+.about-title em { font-style: italic; color: #C8E8F5; }
+.about-body {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.8;
+  font-weight: 300;
+  margin-bottom: 14px;
+  max-width: 480px;
+}
+.about-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+.market-pill {
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.28);
+  color: var(--white);
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 9px 18px;
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+.market-pill:hover { background: rgba(255,255,255,0.22); }
