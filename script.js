@@ -1,7 +1,5 @@
-// Auto-update copyright year
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Mobile nav toggle
 const navToggle = document.getElementById('navToggle');
 const navLinks  = document.getElementById('navLinks');
 
