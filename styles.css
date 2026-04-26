@@ -92,8 +92,8 @@ button { cursor: pointer; font-family: inherit; }
   padding: 9px 18px;
   border-radius: 2px;
   font-weight: 700 !important;
+  transition: background 0.2s;
 }
-.nav-cta { transition: background 0.2s; }
 .nav-cta:hover { background: var(--cream); }
 .nav-hamburger {
   display: none;
